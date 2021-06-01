@@ -9,6 +9,7 @@ function gameLoop() {
 timeResult = setInterval(function () {
   for (let i = 0; i < Obstacle.length; i++) {
     if (myGameComponent.crashWith(Obstacle[i])) {
+      displayGameover();
       clearInterval(timeResult);
     }
   }

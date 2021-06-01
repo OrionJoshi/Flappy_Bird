@@ -1,7 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* global */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-padding {
+  margin: 20px;
+  padding: 20px;
+}
+
+#body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* styling canvas */
+
 canvas {
-  border: 1px solid #d3d3d3;
+  margin-top: 20px;
+  border: 3px solid #200808;
   background-image: url(../Images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* score */
+
+#score {
+  display: none;
+  /* position: absolute;
+  left: 50%; */
+}
+
+.main-container-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(206, 175, 135);
+}
+
+.main-container {
+  padding: 300px;
+  background-color: rgb(31, 24, 53);
+  border-radius: 8px;
+  background-image: url(../Images/message.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* countDown  */
+
+.count-down {
+  padding: 100px;
+  background-image: url("../Images/0.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
 }

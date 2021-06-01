@@ -6,7 +6,7 @@ let myGameArea = {
     this.canvas.height = canvasHeight;
     this.context = this.canvas.getContext("2d");
     document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-
+    this.canvas.setAttribute("id", "canvas");
     this.frameNo = 199;
     this.score = document.getElementById("score");
   },
